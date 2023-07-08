@@ -1,0 +1,140 @@
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0%;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: var(--background);
+}
+
+@keyframes pop-fade {
+	0% {
+		opacity: 0.2;
+		transform: scale(0.7);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.title {
+	display: block;
+	color: var(--purple);
+	font-size: var(--font-size-header);
+	font-family: var(--font-normal);
+	font-weight: 900;
+	margin-top: 150px;
+	padding: 20px;
+	margin-left: -10px;
+	user-select: none;
+	width: 50%;
+	text-align: left;
+	-webkit-user-select: none;
+}
+
+@mixin dot($dotColor) {
+	content: '';
+	background-color: $dotColor;
+	width: 0.8em;
+	height: 0.8em;
+	border-radius: 100%;
+	margin: 5px;
+}
+
+$dots: (
+	'1': var(--red),
+	'2': var(--yellow),
+	'3': var(--green),
+);
+
+@each $x, $color in $dots {
+	.dot:nth-of-type(#{$x}) {
+		@include dot($dotColor: $color);
+	}
+}
+
+.titleHeader {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	i {
+		font-size: 12px;
+		margin-right: 5px;
+	}
+}
+
+.mainContent {
+	padding: 20px;
+	margin-bottom: 40px;
+	flex: 1 1;
+	width: 50%;
+	overflow: hidden scroll;
+
+	font-family: var(--font-code);
+	font-size: var(--font-size-regular);
+	color: var(--light);
+	line-height: 1.4em;
+
+	scrollbar-color: transparent transparent;
+	scrollbar-width: thin;
+
+	transition: scrollbar-color 0.25s;
+	transition-delay: 0.75s;
+
+	&:hover {
+		scrollbar-color: var(--scrollbar-color-thumb) transparent;
+		transition-delay: 0s;
+		transition-duration: 0;
+	}
+
+	&::-webkit-scrollbar {
+		width: 0.5em;
+		height: 100%;
+		background-color: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background-color: var(--scrollbar-color-thumb);
+		border-radius: 0.5em;
+	}
+
+	i {
+		font-size: var(--font-size-icon);
+	}
+}
+
+.promptPrefix span:nth-of-type(1) {
+	color: var(--blue);
+}
+
+.promptPrefix span:nth-of-type(2) {
+	color: var(--light-yellow);
+}
+
+.validCommand {
+	color: var(--green) !important;
+	margin-left: 10px;
+}
+
+.invalidCommand {
+	color: var(--red) !important;
+	margin-left: 10px;
+}
+
+/* Responsive code */
+@media only screen and (max-width: 700px), (max-height: 300px) {
+	.window {
+		width: 100%;
+		height: 100%;
+		max-height: unset;
+		left: 0;
+		top: 0;
+	}
+	.mainContent {
+		padding: 10px;
+	}
+}
