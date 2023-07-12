@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.a20a11bd.css",
+    "main.js": "/Portfolio/static/js/main.793804e2.js",
+    "static/media/fira-code-latin-400-normal.woff": "/Portfolio/static/media/fira-code-latin-400-normal.06c1ad054b7190c10459.woff",
+    "static/media/fira-code-latin-400-normal.woff2": "/Portfolio/static/media/fira-code-latin-400-normal.e662d57ce51fba1f46e3.woff2",
+    "static/media/fira-code-cyrillic-ext-400-normal.woff": "/Portfolio/static/media/fira-code-cyrillic-ext-400-normal.f186a86ab69f5ec5370d.woff",
+    "static/media/fira-code-cyrillic-ext-400-normal.woff2": "/Portfolio/static/media/fira-code-cyrillic-ext-400-normal.8ae7ba46c49a0347ea65.woff2",
+    "static/media/fira-code-greek-400-normal.woff": "/Portfolio/static/media/fira-code-greek-400-normal.38eb798a64b2a667d305.woff",
+    "static/media/fira-code-latin-ext-400-normal.woff": "/Portfolio/static/media/fira-code-latin-ext-400-normal.b4bfeb8f8fc069e5a60c.woff",
+    "static/media/fira-code-cyrillic-400-normal.woff": "/Portfolio/static/media/fira-code-cyrillic-400-normal.fe2a6ee31c8cd9024a1d.woff",
+    "static/media/fira-code-greek-400-normal.woff2": "/Portfolio/static/media/fira-code-greek-400-normal.fdf1c77f42d62a5dc722.woff2",
+    "static/media/fira-code-latin-ext-400-normal.woff2": "/Portfolio/static/media/fira-code-latin-ext-400-normal.f688c1c39f363f86fd4a.woff2",
+    "static/media/fira-code-greek-ext-400-normal.woff": "/Portfolio/static/media/fira-code-greek-ext-400-normal.6b181daf46a81f6de231.woff",
+    "static/media/fira-code-cyrillic-400-normal.woff2": "/Portfolio/static/media/fira-code-cyrillic-400-normal.3b12523542a36f074eff.woff2",
+    "static/media/fira-code-greek-ext-400-normal.woff2": "/Portfolio/static/media/fira-code-greek-ext-400-normal.0e81dfaccdc5adb60d7c.woff2",
+    "index.html": "/Portfolio/index.html",
+    "main.a20a11bd.css.map": "/Portfolio/static/css/main.a20a11bd.css.map",
+    "main.793804e2.js.map": "/Portfolio/static/js/main.793804e2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a20a11bd.css",
+    "static/js/main.793804e2.js"
+  ]
+}
