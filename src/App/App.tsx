@@ -26,7 +26,12 @@ class App extends Component<{}, AppState> {
 			let output
 			if (!commandName) output = <></>
 			else if (!commands.has(commandName))
-				output = <>Command not found: {commandName}<br></br>Type "help" to list the available commands</>
+				output = (
+					<>
+						Command not found: {commandName}
+						<br></br>Type "help" to list the available commands
+					</>
+				)
 			else output = commands.get(commandName)?.execute(this)
 			if (output)
 				this.setState({
@@ -80,14 +85,13 @@ class App extends Component<{}, AppState> {
 		const { record } = this.state
 		return (
 			<div className={styles.wrapper}>
-				<div className={styles.title}>
-					Ismail's Portfolio
-				</div>	
+				<div className={styles.title}>Ismail's Portfolio</div>
 				<div ref={this.mainRef} className={styles.mainContent}>
 					{record.map(({ command, output }, index) => (
 						<div key={index}>
 							<span className={styles.promptPrefix}>
-								<span>{github_username}</span> ~ <span>🪴</span> <span>{'>>'}</span>
+								<span>{github_username}</span> ~ <span>🪴</span>{' '}
+								<span>{'>>'}</span>
 								<span
 									className={
 										commands.has(command)

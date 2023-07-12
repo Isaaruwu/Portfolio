@@ -81,7 +81,7 @@ class InputManager extends Component<
 								  }
 								} else if (event.key === 'ArrowDown') {
 								  // Navigate down the command stack
-								  if (index < this.command_stack.length - 1) {
+								  if (index < this.command_stack.length) {
 									index++;
 								  }
 								}
