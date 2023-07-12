@@ -10,9 +10,9 @@
 	--orange: #fca369;
 	--yellow: #ffd479;
 	--light-yellow: #a6da95;
-	--green: #92d192;
+	--green: #f5a97f;
 	--blue: #a6da95;
-	--aqua: #000000;
+	--aqua: #cad3f5;
 	--purple: #c6a0f6;
 	--biege: #ac8d58;
 	--font-code: Hack, Consolas, 'Courier New', Courier, monospace;
@@ -41,6 +41,7 @@
 
 strong {
 	color: var(--aqua);
+	font-family: var(--font-normal);
 }
 
 em {

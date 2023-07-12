@@ -6,7 +6,7 @@ const email = 'ismailaarabb@gmail.com'
 
 const projects = [
 	'Isaaruwu/Plant-e',
-	// 'Isaaruwu/EstateGuardian', private
+	// 'Isaaruwu/EstateGuardian', private repo
 	'Isaaruwu/TomStock',
 	'Isaaruwu/Template-Generator',
 	// 'Isaaruwu/StockAI2', private repo
@@ -31,13 +31,18 @@ const links = [
 		icon: 'fas fa-fw fa-at',
 		link: `mailto:${email}`,
 		description: 'Lets get in touch!',
+	},
+	{
+		name: 'Resume',
+		icon: 'fas fa-fw fa-file',
+		link: `https://drive.google.com/file/d/1G2i3sFf2IYr8h0H934s1-JzEfYnOLSyY/view?usp=drive_link`,
+		description: 'Here\'s my resume!',
 	}
 ]
 
 const info = (
 	<>
 		<div style={{ lineHeight: '30px' }}>
-			<br></br>
 			<p>Hi!👋</p><br></br>
 			<p>
 				I'm <span className="highlighted">Ismail Aarab</span>, currently a{' '}
@@ -56,7 +61,12 @@ const info = (
 				Here's a list of some of the technologies I've been working with recently 
 				(it's only from my public repos, so it's not exhaustive 😉 ):
 			</p> <br></br>
-			<img alt="stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=isaaruwu&show_icons=true&theme=dark&bg_color=0A0A0A&locale=en"/>
+			<img alt="stats" style={{
+								display: 'block',
+								marginLeft: 'auto',
+								marginRight: 'auto',
+							}} 
+  				src="https://github-readme-stats.vercel.app/api/top-langs/?username=isaaruwu&show_icons=true&theme=dark&bg_color=0A0A0A&locale=en"/>
 		</div>
 	</>
 )

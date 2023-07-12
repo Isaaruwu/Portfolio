@@ -10,6 +10,7 @@ class InputManager extends Component<
 > {
 	inputRef: RefObject<any>
 	updateInputField: (value?: string) => void
+	command_stack: string[]
 
 	constructor(props: { handleExecute: (commandName: string) => void }) {
 		super(props)
@@ -21,7 +22,8 @@ class InputManager extends Component<
 		this.updateInputField = (value = '') => {
 			this.inputRef.current.value = value
 		}
-	}
+		this.command_stack = []
+	}		
 	render() {
 		const { value } = this.state
 		return (
@@ -36,6 +38,7 @@ class InputManager extends Component<
 						this.setState({ value: '', suggestedValue: '' })
 						this.updateInputField()
 						this.props.handleExecute(value)
+						this.command_stack.push(value)
 					}}
 					className={styles.inputForm}
 				>
@@ -66,6 +69,28 @@ class InputManager extends Component<
 									value: newValue,
 									suggestedValue: '',
 								})
+							}
+							if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
+								event.preventDefault();
+								let index = this.command_stack.indexOf(value);
+								if( value === '') {index = this.command_stack.length}
+								if (event.key === 'ArrowUp') {
+								  // Navigate up the command stack
+								  if (index > 0) {
+									index--;
+								  }
+								} else if (event.key === 'ArrowDown') {
+								  // Navigate down the command stack
+								  if (index < this.command_stack.length - 1) {
+									index++;
+								  }
+								}
+								const newValue = this.command_stack[index] || '';
+								this.updateInputField(newValue);
+								this.setState({
+								value: newValue,
+								suggestedValue: '',
+								});
 							}
 						}}
 						onInput={event => {

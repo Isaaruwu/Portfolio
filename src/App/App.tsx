@@ -26,7 +26,7 @@ class App extends Component<{}, AppState> {
 			let output
 			if (!commandName) output = <></>
 			else if (!commands.has(commandName))
-				output = <>Command not found: {commandName}</>
+				output = <>Command not found: {commandName}<br></br>Type "help" to list the available commands</>
 			else output = commands.get(commandName)?.execute(this)
 			if (output)
 				this.setState({

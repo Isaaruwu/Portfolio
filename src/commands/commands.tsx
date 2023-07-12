@@ -37,21 +37,22 @@ const rawCommands: Command[] = [
 			const { userDataLoaded, userData } = app.state
 			if (!userDataLoaded)
 				return <>User data could not be fetched</>
-			const { avatar_url, login, name, bio } = userData
+			const { avatar_url, login} = userData
 			return (
 				<div className={styles.infoWrapper}>
 					<div className={styles.infoInner}>
-						<img
-							src={avatar_url}
-							className={styles.avatar}
-							alt="GitHub avatar"
-						/>
-						<div className={styles.content}>
+						<div className={styles.title}>
+							<img
+								src={avatar_url}
+								className={styles.avatar}
+								alt="GitHub avatar"
+							/>
 							<div className={styles.header}>
-								<strong>{name}</strong>{' '}
-								<span className="muted">@{login}</span>
+								<strong>Ismail Aarab</strong>
+								<p className="muted">@{login}</p>
 							</div>
-							<em className={styles.bio}>"...{bio}"</em>
+						</div>	
+						<div className={styles.content}>
 							<div className={styles.info}>{info} </div>
 						</div>
 					</div>
@@ -73,7 +74,7 @@ const rawCommands: Command[] = [
 						({ name, html_url, description }: any, key: number) => (
 							<ListElement
 								key={key}
-								icon={'fab fa-fw fa-github-alt'}
+								icon={'fab fa-fw fa-github'}
 								name={name}
 								link={html_url}
 								description={description}
