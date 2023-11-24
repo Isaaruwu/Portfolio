@@ -5,12 +5,15 @@ const discord_userid = '795096902591971338'
 const email = 'ismailaarabb@gmail.com'
 
 const projects = [
+	'Isaaruwu/Rewind',
+	'Isaaruwu/.dotfiles',
 	'Isaaruwu/Plant-e',
-	// 'Isaaruwu/EstateGuardian', private repo
 	'Isaaruwu/TomStock',
 	'Isaaruwu/Template-Generator',
-	// 'Isaaruwu/StockAI2', private repo
+	'Isaaruwu/PolyAI-EmailSender',
 	'Isaaruwu/SmollBot',
+	// 'Isaaruwu/EstateGuardian', private repo
+	// 'Isaaruwu/StockAI2', private repo
 ]
 
 const links = [
