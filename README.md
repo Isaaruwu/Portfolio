@@ -1,7 +1,8 @@
 # 👋 My Portfolio
 Welcome to my terminal-like personal portfolio! This project was built using React and serves as a platform where you can explore my coding projects, get to know me better, and find my social links.
 
-![image](https://github.com/Isaaruwu/Isaaruwu.github.io/assets/89482200/0aac7346-d539-4b26-a667-df5b5c9cba61)
+![image](https://github.com/Isaaruwu/Portfolio/assets/89482200/86d37a4f-dad1-47ca-928a-cb4330103510)
+
 
 ## 🌱 Usage
 To interact with my portfolio, simply visit isaar.dev and explore its functionalities. Feel free to browse through the projects, learn about my background, and connect with me on various platforms.
