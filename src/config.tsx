@@ -38,7 +38,7 @@ const links = [
 	{
 		name: 'Resume',
 		icon: 'fas fa-fw fa-file',
-		link: `https://drive.google.com/file/d/1G2i3sFf2IYr8h0H934s1-JzEfYnOLSyY/view?usp=drive_link`,
+		link: `https://drive.google.com/file/d/1eEWXEWpFSDxCSrqxCIBdei3GF4LMFVyG/view?usp=sharing`,
 		description: 'Here\'s my resume!',
 	}
 ]
@@ -48,17 +48,18 @@ const info = (
 		<div style={{ lineHeight: '30px' }}>
 			<p>Hi!👋</p><br></br>
 			<p>
-				I'm <span className="highlighted">Ismail Aarab</span>, currently a{' '}
-				student at <span className="highlighted">Polytechnique Montréal</span> in {' '}
-				Software Engineering :)
+				I'm <span className="highlighted">Ismail Aarab</span>,  soon to be a 
+				<span className="highlighted"> graduate with a Bachelor's
+				degree in Software Engineering from Polytechnique Montréal</span>. With a strong foundation in 
+				software development and a passion for continuous learning, I thrive on creating innovative solutions to complex problems.
 			</p>
+			<br></br>
 			<p>
-				I like to write various scripts to automate my daily tasks and I've been
-				doing some{' '}
-				<span className="highlighted">Data Engineering & AI</span> in school and 
-				for fun on my spare time.
-				I also like to play around with{' '}
-				<span className="highlighted">building full stack web applications</span>!
+			Throughout my academic journey, I have specialized in automating tasks through scripting 
+			and have developed a keen interest in Data Engineering and Artificial Intelligence. My projects, 
+			both in school and during my spare time, have allowed me to gain hands-on experience in these fields. 
+			Additionally, I enjoy designing and building full-stack web applications, 
+			constantly pushing the boundaries of what I can achieve.
 			</p><br></br>
 			<p>
 				Here's a list of some of the technologies I've been working with recently 
