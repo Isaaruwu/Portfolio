@@ -68,7 +68,6 @@ class App extends Component<{}, AppState> {
 	}
 
 	componentDidUpdate(_: any, prevState: AppState) {
-		// auto scroll
 		if (
 			prevState.record.length !== this.state.record.length &&
 			this.mainRef?.current
