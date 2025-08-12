@@ -40,18 +40,7 @@ const rawCommands: Command[] = [
 			const { avatar_url, login} = userData
 			return (
 				<div className={styles.infoWrapper}>
-					<div className={styles.infoInner}>
-						<div className={styles.title}>
-							<img
-								src={avatar_url}
-								className={styles.avatar}
-								alt="GitHub avatar"
-							/>
-							<div className={styles.header}>
-								<strong>Ismail Aarab</strong>
-								<p className="muted">@{login}</p>
-							</div>
-						</div>	
+					<div className={styles.infoInner}>	
 						<div className={styles.content}>
 							<div className={styles.info}>{info} </div>
 						</div>
