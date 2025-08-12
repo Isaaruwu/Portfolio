@@ -56,10 +56,6 @@ const info = (
 			My personal projects reflect this blend of interests: from a C++ order book simulator implementing advanced matching algorithms to full-stack web applications and AI tools.
 			I thrive on writing clean, efficient code and solving challenging problems.
 			</p>
-<<<<<<< HEAD
-
-=======
->>>>>>> 62c3141 (UPDATE)
 		</div>
 	</>
 )
